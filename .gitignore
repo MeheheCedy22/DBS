@@ -1,0 +1,7 @@
+.idea
+.vscode
+scripts/build.sh
+scripts/stop_and_rm.sh
+zadanie4/DBS-2024-Zadanie4.txt
+zadanie5/DBS-2024-Zadanie5.txt
+TODO.txt
