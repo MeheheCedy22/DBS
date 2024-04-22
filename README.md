@@ -5,7 +5,9 @@ Databázové systémy - 4.semester
 Dokumentácia nebola treba.
 
 ### Zadanie 2
-Databázu som sem nemohol nahrať pretože je príliš veľká (~1,35 GB).
+Databázu som sem nemohol nahrať na GitHub pretože je príliš veľká (~1,35 GB).
+[Link na GDrive](https://drive.google.com/file/d/1fxLSiow6iqyba2m6YULOJh9EW8cDGMqf/view?usp=sharing)
+
 
 [Dokumentácia MD](documentation/zadanie2.md)
 ### Zadanie 3
