@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/post-stats",
+  "definitions": {
+    "post-stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/result"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "post-stats"
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "monday": {
+          "type": "number"
+        },
+        "tuesday": {
+          "type": "number"
+        },
+        "wednesday": {
+          "type": "number"
+        },
+        "thursday": {
+          "type": "number"
+        },
+        "friday": {
+          "type": "number"
+        },
+        "saturday": {
+          "type": "number"
+        },
+        "sunday": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "friday",
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+      ],
+      "title": "result"
+    }
+  }
+}

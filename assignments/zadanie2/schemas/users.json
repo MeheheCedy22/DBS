@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Root",
+    "definitions": {
+        "Root": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Item"
+                    }
+                }
+            },
+            "required": [
+                "items"
+            ],
+            "title": "Root"
+        },
+        "Item": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "reputation": {
+                    "type": "integer"
+                },
+                "creationdate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "displayname": {
+                    "type": "string"
+                },
+                "lastaccessdate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                          	"format": "date-time"
+                        }
+                    ]
+                },
+                "websiteurl": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "qt-uri-protocols": [
+                                "http",
+                                "https"
+                            ]
+                        }
+                    ]
+                },
+                "location": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "aboutme": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "views": {
+					"type": "integer"
+                },
+                "upvotes": {
+					"type": "integer"
+                },
+                "downvotes": {
+					"type": "integer"
+                },
+                "profileimageurl": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "qt-uri-protocols": [
+                                "http",
+                                "https"
+                            ]
+                        }
+                    ]
+                },
+                "age": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+							"type": "integer"
+                        }
+                    ]
+                },
+                "accountid": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "integer"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "creationdate",
+                "displayname",
+                "downvotes",
+                "id",
+                "reputation",
+                "upvotes",
+                "views",
+            ],
+            "title": "Item"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Root",
+  "definitions": {
+    "Root": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "title": "Welcome4"
+    },
+    "Item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "viewcount": {
+          "type": "integer"
+        },
+        "creationdate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "closeddate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lasteditdate": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "lastactivitydate": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "duration": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "viewcount",
+        "creationdate",
+        "closeddate",
+        "duration"
+      ],
+      "title": "Item"
+    }
+  }
+}

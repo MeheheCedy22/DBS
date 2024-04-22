@@ -1,0 +1,994 @@
+{
+  "items": [
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Jonno",
+      "text": "Yeah that doesn't look too good. I'm not an expert in Linux by any means, but somethings definitely tried to execute on there. I'm not quite sure how though as it looks like it attempted to log in as root and failed. Are there any other logs in your auth.log? Any other means of remote admin? I've seen Mac's with VNC server enabled get hacked before via that, although this looks like an SSH attempt. Looks like the IPs it was downloading from are hosted in China somewhere.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T10:25:02.610+00",
+      "diff": "00:03:13.92",
+      "avg": "00:03:13.92"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "David Schwartz",
+      "text": "The attack actually came from China.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T10:30:45.310+00",
+      "diff": "00:05:42.7",
+      "avg": "00:04:28.31"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "Yes but what is a Microsoft owned IP doing trying to breach a device across the internet?",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T10:37:58.037+00",
+      "diff": "00:07:12.727",
+      "avg": "00:05:23.115667"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Journeyman Geek",
+      "text": "You got brute forced. This is why one does not leave a ssh server on the internet, even if you have a password. Anything short of key based auth is not secure enough these days.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T10:41:17.843+00",
+      "diff": "00:03:19.806",
+      "avg": "00:04:52.28825"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Unencoded",
+      "text": "You could be the victim of a secondary attack via a breached Microsoft system, depending on just how serious these hackers are. Possibly IP Spoofing too? But as the previous comment says, key based authentication only is advisable.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T10:41:59.857+00",
+      "diff": "00:00:42.014",
+      "avg": "00:04:02.2334"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "So where can I read more about security?",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T11:02:04.233+00",
+      "diff": "00:20:04.376",
+      "avg": "00:06:42.5905"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Hennes",
+      "text": "Well we have http://security.stackexchange.com/. \n\nBut first thing first: \nThe compromised host can no longer be trusted. Take it off the network.\n\nIf possible make a backup so you can research what was done and how it was done. Next reinstall the OS from a clean source. Restore data from backups. \n\n**Secure the system** so you do not get infected again. Finding out how they got in is highly recommended. (Hence the recommendation to make a copy of the infected system).",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T11:06:01.990+00",
+      "diff": "00:03:57.757",
+      "avg": "00:06:19.042857"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Hennes",
+      "text": "Given the brute force attack consider password logins. If you keep those enabled then make sure there are no weak passwords. (As already mentioned, keybased is better. If you and possible other can switch to those: great. If not make sure nobody uses '1234' 'password' 'admin' or similar weak passwords.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T11:08:33.580+00",
+      "diff": "00:02:31.59",
+      "avg": "00:05:50.61125"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "Ok thanks a lot. I will do that. Are any of you willing to look in to this with me? I might need someone to bounce this with. The system itself is basically a stripped down Debian version for ARMHF CPU's. Nothing extensively complex.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T11:10:22.750+00",
+      "diff": "00:01:49.17",
+      "avg": "00:05:23.784444"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Run CMD",
+      "text": "I recommend setting up port knocking for all maintenance/development access in addition. This way, all your regular ports appear to be closed and people lose interest in your device pretty fast. Means less bandwidth gets wasted for attacks. At least if your service itself is reasonably secure.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T11:46:50.580+00",
+      "diff": "00:36:27.83",
+      "avg": "00:08:30.189"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Wayne Werner",
+      "text": "`ossec-hids` is another useful tool for security auditing.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T16:40:25.373+00",
+      "diff": "04:53:34.793",
+      "avg": "00:34:25.153"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Kevin Evans",
+      "text": "You should generally disable root ssh login in the sshd configuration file. You can always login to your normal account and use su/sudo to become the superuser.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T19:28:09.520+00",
+      "diff": "02:47:44.147",
+      "avg": "00:45:31.735833"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "nneonneo",
+      "text": "FYI: 40.127.205.162 is a **Microsoft Azure** IP address according to GeoIP. Consequently, you can't blame Microsoft for the attack - it's equivalent to blaming Amazon because someone used EC2 for spam. The only thing Microsoft can really do is kick the attackers off Azure, but they'll be back on a different cloud platform in no time.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T19:33:24.270+00",
+      "diff": "00:05:14.75",
+      "avg": "00:42:25.813846"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Kryten",
+      "text": "Is it a raspberry pi? I'm guessing, since you're using the ARM version of Debian. If so, you can wipe the SD card & start over. And make sure you change the default username & password.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T20:54:36.110+00",
+      "diff": "01:21:11.84",
+      "avg": "00:45:11.958571"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "BrainSlugs83",
+      "text": "@Vaid -- not an answer to your question -- but it's vaguely on-topic -- I highly recommend watching this session from Build 2015 to anyone building consumer-based products that connect to the internet: https://channel9.msdn.com/Events/Build/2015/2-625 -- You might shrug it off since it has Azure in the title, but the concepts covered are pretty high-level and translate well. :-)",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T22:00:57.747+00",
+      "diff": "01:06:21.637",
+      "avg": "00:46:36.6038"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "user1751825",
+      "text": "It's odd that the hacker didn't attempt to hide his actions by editing the history.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T23:08:10.447+00",
+      "diff": "01:07:12.7",
+      "avg": "00:47:53.859812"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "user253751",
+      "text": "\"I noticed some strange commands written in the terminal\" - that's odd, usually every SSH connection will gets a separate terminal.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-01T23:22:37.610+00",
+      "diff": "00:14:27.163",
+      "avg": "00:45:55.818824"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@ClassStacker I'll look port knocking up.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:48:06.830+00",
+      "diff": "02:25:29.22",
+      "avg": "00:51:27.674444"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@KevinEvans I'll disable root ssh as it isn't really needed in my application",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:48:19.130+00",
+      "diff": "00:00:12.3",
+      "avg": "00:48:45.812632"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@nneonneo I didn't know that, but I contacted Microsoft anyways, just to let them know",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:48:31.823+00",
+      "diff": "00:00:12.693",
+      "avg": "00:46:20.15665"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@Kryten No, it's an Olimex A10 Lime 4GB with NAND flash on board.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:48:40.693+00",
+      "diff": "00:00:08.87",
+      "avg": "00:44:08.190619"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@BrainSlugs83 that is very relevant to my current project. Thanks!",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:48:51.873+00",
+      "diff": "00:00:11.18",
+      "avg": "00:42:08.3265"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@user1751825 yes I think so as well. I guess he/she never got far enough in the process to do so.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:49:03.437+00",
+      "diff": "00:00:11.564",
+      "avg": "00:40:18.902043"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@user20574 yes that is really odd. At first I thought that my Mac had been hacked. I guess I could see the commands because we were both logged in as root.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T01:49:15.113+00",
+      "diff": "00:00:11.676",
+      "avg": "00:38:38.600958"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "isanae",
+      "text": "\"_I noticed some strange commands written in the terminal_\": were those visible on _your_ terminal or from the bash history? How did you first notice this stuff? I don't see how an ssh session could write to your particular terminal.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T03:21:10.647+00",
+      "diff": "01:31:55.534",
+      "avg": "00:40:46.47828"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "isanae",
+      "text": "In fact, if this was written in your terminal, the hacker is probably sitting in the next cubicle.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T03:43:43.373+00",
+      "diff": "00:22:32.726",
+      "avg": "00:40:04.410885"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": null,
+      "text": "Before you do anything that could compromise your logs, screenshot them and send the screenshot to your country's cybercrime agency. Assuming you're in the US, that agency is the FBI. They might not investigate, but you never know. In fact, if you should later get hacked, and they can link both incidents to the same hacker or group, that might provide some additional incentive to prosecute.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T08:12:58.247+00",
+      "diff": "04:29:14.874",
+      "avg": "00:48:33.687296"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Hastur",
+      "text": "@isanae It is simple to write on a terminal. It was not this example but is enough `echo Ohhhii | sudo write  $USER pts/9`  to write on the terminal 9 (`tty` can give you the current _tty_, if you want to try). Programs that run as root do not need _sudo_.  BTW there are many logs, especially the security ones,  that can be written on all the terminals, or it could be a script not perfectly done (or executed) that redirects some output on a fixed tty...",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T09:00:46.033+00",
+      "diff": "00:47:47.786",
+      "avg": "00:48:32.047964"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "MariusMatutiae",
+      "text": "Above all, do not leave your pc running unattended with an open root session!",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T09:33:22.470+00",
+      "diff": "00:32:36.437",
+      "avg": "00:47:59.095862"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Zaibis",
+      "text": "Byt the way you guys are talking about key based ssh auths are week? do you mean key in sensce of keyboard key based? or private/public key based? Since I'm doing the second and I'm now wondering, Since when this is considered unsecure?!",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T13:06:13.120+00",
+      "diff": "03:32:50.65",
+      "avg": "00:53:28.814333"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "bwDraco",
+      "text": "Archive all the data on the compromised machine, wipe it, and rebuild the system with stronger security measures. Examine the archived data and look for any information that could be used to determine the source and nature of the attack.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-02T17:04:42.303+00",
+      "diff": "03:58:29.183",
+      "avg": "00:59:26.890742"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@isanae I noticed the commands on my SSH terminal on the mac which was connected to my dev board (which got attacked) via SSH. So it was my dev board that got hacked, not my Mac, however, both me and the attacker were logged in to the dev board as root. So no matter where or who you are, once you're logged in as root you can see all of the root history. Right?",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-03T06:30:15.107+00",
+      "diff": "13:25:32.804",
+      "avg": "01:22:45.825531"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@moonman239 unfortunately I'm in Sweden, and the FBI equivalent is called SÄPO. I don't know if they'd be interested though, they probably know about this. But could I be wrong?",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-03T06:31:46.720+00",
+      "diff": "00:01:31.613",
+      "avg": "01:20:18.122121"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@isanae well, then I guess my mom is the hacker. And the cubicle has to be our living room. I run my company from the comfort of my home so I don't think that the intruder had access to my computer physically.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-03T07:10:46.820+00",
+      "diff": "00:39:00.1",
+      "avg": "01:19:05.239118"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Thorbjørn Ravn Andersen",
+      "text": "You cannot trust this installation anymore.  It must be completely reinstalled from scratch.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-03T20:12:08.493+00",
+      "diff": "13:01:21.673",
+      "avg": "01:39:09.137229"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Flash Thunder",
+      "text": "It's simply a proxy server that broadcasts it's status to other proxies in the botnet.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-04T09:13:28.920+00",
+      "diff": "13:01:20.427",
+      "avg": "01:58:06.1175"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "NickG",
+      "text": "Your site is *still* hosting the malware at `http://222.186.30.209:65534/yjz`   I'm not sure why you've not removed it yet?   If you can't remove it, disconnect the server from the internet.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-04T12:29:33.573+00",
+      "diff": "03:16:04.653",
+      "avg": "02:00:12.564405"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Ajedi32",
+      "text": "@NickG Uh, 222.186.30.209:65534 isn't his site. That's where the attacker was hosting the scripts that he downloaded onto the OP's machine.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-04T14:09:20.543+00",
+      "diff": "01:39:46.97",
+      "avg": "01:59:40.311921"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "NickG",
+      "text": "@Ajedi32 - sorry I misunderstood.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-04T15:12:38.237+00",
+      "diff": "01:03:17.694",
+      "avg": "01:58:13.578128"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Tim G",
+      "text": "Thanks very much for the fascinating read.  I found that the payloads are no longer available for download.  Where can a poor student with minimal connections (yet!) find them for analysis?",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-06T22:06:13.817+00",
+      "diff": "2 days 06:53:35.58",
+      "avg": "03:17:36.628175"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@TimG I have a copy right here on my computer along with the logs. I don't know where I can upload them and share them. If anyone has any ideas, let me know.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-07T05:14:04.277+00",
+      "diff": "07:07:50.46",
+      "avg": "03:23:13.550902"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Tim G",
+      "text": "Dropbox, Google Drive, private email.  I could see Dropbox or Google Drive killing it, so maybe it would go through if it were tar -czf'd.  You could also host it on your box by setting a loosely passworded unprivileged account that ssh's to a chrooted folder; people could then scp it from you.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-07T07:48:20.780+00",
+      "diff": "02:34:16.503",
+      "avg": "03:22:03.62119"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Tim G",
+      "text": "http://allanfeid.com/content/creating-chroot-jail-ssh-access",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-07T07:55:42.257+00",
+      "diff": "00:07:21.477",
+      "avg": "03:17:31.943418"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "pabouk - Ukraine stay strong",
+      "text": "@nneonneo: Also the official [list of Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653) shows the range containing the address 40.127.205.162: **40.127.192.0/18**.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-07T09:13:10.830+00",
+      "diff": "01:17:28.573",
+      "avg": "03:14:48.230454"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@TimG here's a link to the binary. it's zipped. https://drive.google.com/folderview?id=0BzXsxVbvw8tgRTdOczZVQjhoWmc&usp=sharing",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-07T11:28:49.090+00",
+      "diff": "02:15:38.26",
+      "avg": "03:13:29.342222"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "some_groceries",
+      "text": "its like reading a creepypasta for developers, i know this is not related to a solution but meh _grabs popcorn_",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-10T05:40:01.130+00",
+      "diff": "2 days 18:11:12.04",
+      "avg": "04:35:36.792174"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Shawn Cicoria",
+      "text": "Can you please post this incident to http://cert.microsoft.com/report.aspx  (note I don't work on the CERT team)..",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-11T14:35:22.867+00",
+      "diff": "1 day 08:55:21.737",
+      "avg": "05:11:46.684617"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "vaid",
+      "text": "@ShawnCicoria-MSFT I already have. I even supplied the logs and the trojan all neatly zipped and marked. I have not received any response.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2016-02-11T15:03:56.460+00",
+      "diff": "00:28:33.593",
+      "avg": "05:05:52.661875"
+    },
+    {
+      "post_id": 1034137,
+      "title": "Did I just get hacked?",
+      "displayname": "Joe R.",
+      "text": "If you saw the commands on your screen, the hacker might have used a remote desktop program, or physically typed them on your keyboard.",
+      "post_created_at": "2016-02-01T10:21:48.690+00",
+      "created_at": "2017-05-21T22:53:34.093+00",
+      "diff": "465 days 07:49:37.633",
+      "avg": "9 days 16:54:31.538837"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "acejavelin",
+      "text": "What are you pinging... The router itself (gateway address) or something on the internet? If you are failing pings to the router, especially on multiple devices, then the likely culprit is the router itself or anything else in common like if you have a switch between the router and network devices.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T13:06:12.590+00",
+      "diff": "00:15:45.293",
+      "avg": "00:15:45.293"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "I'm pinging my router, sry for not mention that.\n\nI'll update that on the question",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T13:08:20.413+00",
+      "diff": "00:02:07.823",
+      "avg": "00:08:56.558"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "what do you mean \"general failure\". Quote the message. Better, Show the output. Do you mean like https://i.imgur.com/Ppju6Zw.png",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T13:09:48.123+00",
+      "diff": "00:01:27.71",
+      "avg": "00:06:26.942"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop nope, added a screen shot to the question.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T13:13:46.517+00",
+      "diff": "00:03:58.394",
+      "avg": "00:05:49.805"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "You say yourself this only happened since changing router. Maybe it's an issue with the router",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T14:08:31.477+00",
+      "diff": "00:54:44.96",
+      "avg": "00:15:36.836"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "I don't think there's a setting on a router for \"let pings to the IP fail from time to time\", or any setting that'd be expected to cause that. I suggest you try speaking to your ISP about it",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T15:00:46.640+00",
+      "diff": "00:52:15.163",
+      "avg": "00:21:43.223833"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop you are right, I didnt thought its some setting, but asked to be sure its not a problem on the firmware of somthing like that. I'll check it with my ISP, Thanks very much",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T16:51:32.727+00",
+      "diff": "01:50:46.087",
+      "avg": "00:34:26.49"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "acejavelin",
+      "text": "This is not uncommon when your IP version is incorrect... Are you using IPv6? If not, try disabling it in Windows.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T17:21:46.333+00",
+      "diff": "00:30:13.606",
+      "avg": "00:33:54.8795"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@acejavelin Thanks, I tried that with big hope and unfortunately it keep happen.    Updated with new details from the log view in the router managment in the question under EDIT.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T18:41:00.187+00",
+      "diff": "01:19:13.854",
+      "avg": "00:38:56.987778"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen if you want more clues you could use a packet sniffer like wireshark, and filter for ping (known as ICMP protocol), and for the source and dest IPs of your computer and your router.  But do you still have your old broken router and is it the same model?  'cos if your old broken router doesn't have that problem but your new one does then that should suggest to you it's a router issue",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:15:13.210+00",
+      "diff": "00:34:13.023",
+      "avg": "00:38:28.5913"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@acejavelin no it can't be that, look his error is that sometimes he gets a reply and sometimes not.  I doubt that happens in the situation you suggest. He is getting some replies and they have an IPv4 address, so he has IPv4 set up on both.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:17:35.060+00",
+      "diff": "00:02:21.85",
+      "avg": "00:35:11.614818"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "You could check if this problem exists on every port of the 'router'",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:20:35.923+00",
+      "diff": "00:03:00.863",
+      "avg": "00:32:30.718833"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop Yes, i've already have a sniffing data of that issue. when I look over the ICMP and over that packets, there is no any clues(just stop pinging and continue when the issue is over), but there is alot of another data but cant understand this data.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:20:59.877+00",
+      "diff": "00:00:23.954",
+      "avg": "00:30:02.506154"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "You could include screenshots of that in your question.. what does your ISP say if/when you mentioned this issue? Just because it's a new router doesn't mean it's not faulty. It's good to have more than one router incase one goes down, as internet access is important. And generally for troubleshooting it's good to have more than one of stuff.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:23:13.003+00",
+      "diff": "00:02:13.126",
+      "avg": "00:28:03.264714"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop I tried to change port on my router (again with big big hope, and unfortunately... no magic), but I've tried to change again, at the time we speak(to the desktop port that works fine, and still the problem occure).\nBut I can tell that there is a another Desktop computer that connect via bridge if I call it in the right name (somthing that connected to router port and splitting that port to more 4 devices).\n\non that desktop computer, according to my tests, the issue is not happening there. (its windows 7 there).\n\nOn the laptops windows 10 (if it matters).",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:33:52.837+00",
+      "diff": "00:10:39.834",
+      "avg": "00:26:53.702667"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop its too large to take a screenshot of it, its 1500 lines(!!!), after filtering all other packets (before and after the issue).\nI dont know if it possible, I maybe upload it to the question?",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:35:31.743+00",
+      "diff": "00:01:38.906",
+      "avg": "00:25:19.027875"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen maybe that port that that desktop is connected to, is one port of the 'router' that is working.  What you call a bridge, some call a switch, there isn't a big difference between a switch and a bridge",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:42:13.463+00",
+      "diff": "00:06:41.72",
+      "avg": "00:24:13.303882"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen well, you could in theory use http://ge.tt to upload the file, but really it's probably a router issue, what does your ISP think about it? They don't really make these things easy for people to investigate 'cos what happens inside the router is a bit of an unknown.. Some people have routers where the router software is very open.. like DDWRT or something like that and then some people dig around. Some will even set up a little computer as a router, then they can dig around.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T19:44:44.567+00",
+      "diff": "00:02:31.104",
+      "avg": "00:23:00.959444"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop sorry for delaying in with my answers, I try things at the time we speak.\nI've updated the wireshark sniffing data to the question post.\nTo be honest I didnt mentioned that yet In front of my ISP, till yesterday I tought it was only \"My laptop problem\", and yesterday I discovered its in other latop that connected directly but I will talk to them about that.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T20:02:10.763+00",
+      "diff": "00:17:26.196",
+      "avg": "00:22:43.340316"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop\n\nOne more thing, as you suggested, I tried to disconnect that bridge/switch and connect only the desktop computer directly to the router to check if it fix the issue, and for the last 5-7 minutes, there is no problem(good news), but I keep waiting.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T20:02:21.970+00",
+      "diff": "00:00:11.207",
+      "avg": "00:21:35.73365"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop Wow, it had a feeling like I find the problem... but... just heppen right now :(\nthe other switch I've talked about is disconnected and on my hand, so everything is connected correctly, but issue still there.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T20:19:27.487+00",
+      "diff": "00:17:05.517",
+      "avg": "00:21:22.86619"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen You are limited in what troubleshooting you can do because you only have the one router.  The ISP probably won't go through the wireshark data.. The issue you are seeing is very rare.. intermittent general failure when pinging. e.g. https://superuser.com/questions/907863/intermittent-recurring-ping-general-failure-to-internet-but-not-router    and even that problem isn't the same as yours.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T22:31:00.427+00",
+      "diff": "02:11:32.94",
+      "avg": "00:26:23.324091"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "Why not just see if the ISP will replace the router... If you are curious re computers there are so many different areas you could look at where you would learn stuff. With likely hardware related issues like this people just try swapping the hardware.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-08T22:31:35.847+00",
+      "diff": "00:00:35.42",
+      "avg": "00:25:16.023913"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop You are right. I asked here the question, just to be sure i'm not missing anything with this problem just before blaming the ISP  I will talk to them soon and hope for good.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-09T06:12:28.403+00",
+      "diff": "07:40:52.556",
+      "avg": "00:43:25.046083"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen it is not about blaming the ISP. The ISP have tech support troubleshooters like you or me that may even give you ideas of what to try out.  And their knowledge is very specific to this area as all their calls are troubleshooting internet issues.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-09T11:24:38.833+00",
+      "diff": "05:12:10.43",
+      "avg": "00:54:10.06144"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop yes you are right. I was talking to them today, and they changed some settings on the router, for one hour it seems the issue is solved, but instead of \"general failure\", there is two lines of \"request time out\".",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-10T13:05:32.350+00",
+      "diff": "1 day 01:40:53.517",
+      "avg": "01:51:20.963577"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen It would be very very interesting if you post as an answer, what you learnt as an answer here, that may then lead to another question or a later edit of your answer. Hopefully you remember the troubleshooting steps you did with them. If not it's good to take notes. Maybe you can change settings to reproduce and then solve the problem so as to turn the general failure into a request timeout. And we may then be better placed to finding the answer to the request timeout.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-10T16:14:30.143+00",
+      "diff": "03:08:57.793",
+      "avg": "01:54:13.438741"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop The problem unfortunately is not solved at the end of the day.\nI was testing it all the time from then... altoug the settings change the ISP did to the router.\nI talked to them again after the issue is returned again, and they will send me a technician is going to test the problem pysically at the place. they said, maybe its aa problem inside the router.\nThe technician should come tommorrow, I will update with the solutions after that, ofcourse.\n\nThanks",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-11T09:40:11.717+00",
+      "diff": "17:25:41.574",
+      "avg": "02:27:29.443572"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen thanks, please update with the solution so far though that changed general failure to request timeout.  And the troubleshooting steps they mentioned.  It may be useful for others. And then a further update when you hear from the technician This site works as a QnA database pooling knowledge of expert users / techs.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-11T11:27:28.410+00",
+      "diff": "01:47:16.693",
+      "avg": "02:26:06.245276"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop I dont really know what they did, it was a settings change they did remotely.\nAnd the general failure is back again, so it dont really helped.\n\nToday the technician should come and I'll check with him what he does and ofcourse update this answer.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T09:46:13.117+00",
+      "diff": "22:18:44.707",
+      "avg": "03:05:51.527333"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen ah re remote working, generally speaking i'd suggest that you don't let them do stuff themselves on your computer 'cos you wont' learn anything. Tell them you want to do it and you want them to help you do it by telling you what to do.  Then, they may say \"open the command prompt\",e.t.c. in which case you have have a conversation easily. Or if you are unlucky they may talk in baby steps and say \"click here / click there/ \"(leading you to open a command prompt), and then you have to speed them up.  Make sure they know you know how to do xyz.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T11:10:28.983+00",
+      "diff": "01:24:15.866",
+      "avg": "03:02:34.893097"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen so you could let them see your screen(though that's optional). Infact it's probably better if they don't see your screen 'cos then they give you more information about what you are to look for to troubleshoot as they are.   Really at your level of knowledge on a computer, there's no reason why they can't talk you through things.  and ask you what you see. And then you can ask them questions too to see what they are looking for and why something matters.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T11:11:34.827+00",
+      "diff": "00:01:05.844",
+      "avg": "02:56:54.610312"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen Remote suppose is suitable for very low skilled end users that can barely use a mouse, and users that just aren't technical at all..  If they try it on you then just tell them no you want to do it can they help/support you in fixing it.    BTW they are called technical support (not technical take-over and do everything for you - unless you need that, which you don't)! You can learn a lot from them if you use them right. (less so if they are very unskilled and don't know even the basics).",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T11:13:58.670+00",
+      "diff": "00:02:23.843",
+      "avg": "02:51:37.314333"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop You are absolutly right. but I dont know why they just \"do stuff\" even if I introduce my self as \"with knowledge\".\nbtw There is an update about this issue, I will update it as \"Answer\".\nThey replaced me a new router, and the issue still happennig, the technician said, it should be some infastructer issue (inside my house), so they should continue working on it.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T16:35:50.910+00",
+      "diff": "05:21:52.24",
+      "avg": "02:56:02.459206"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen it's like chess, saying you are \"with knowledge\" isn't the right thing to say.. you want to stop them going straight in so best to say to them as I suggested so they dont really have a choice in the matter. And they can support people so it won't be a problem for them.  They can't do stuff remotely on your computer unless you tell them they can.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T16:52:09.097+00",
+      "diff": "00:16:18.187",
+      "avg": "02:51:28.622858"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen They might even say \"well if you 'have knowledge' or don't want me to go in then why are you calling / what do you expect me to do\".So u have to tell them in an idiot proof way that you want them to help you fix it - you fixing it, with their support. They'll understand.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T16:54:20.880+00",
+      "diff": "00:02:11.783",
+      "avg": "02:46:46.488417"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen Have you tried pinging when wireless? What happens then? And if wireless works, then how about if one computer pings another through the router?  And how about if you connect 2 computers up with a cable directly and each pings each other?",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T16:56:03.087+00",
+      "diff": "00:01:42.207",
+      "avg": "02:42:18.805135"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop The settings they changed, wasn't in my computer, they changed some settings on the router remotely, but you are right.\nWell, with wireless, then I dont experience the issue in the same way, with wireless, its just \"kicking\" me from the wifi, and I need to reconnect.\nIf i connect 2 computers with cable and ping each other, so intermittently they lose connection with that issue, and ofcourse the ping is going to lost.\nTommorrow i'm going to check all my infastructor in my house plus talking to my ISP for some infastructor fixing in my house.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T20:54:58.007+00",
+      "diff": "03:58:54.92",
+      "avg": "02:44:19.755527"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop the technician said... because my wired telephon in my house is \"riding\" on the same infastructor as the internet(the service is comming from different companies, the telephone from one and the internet from another). so he suggest me to split that to 2 pairs instead of one pair either for the telephone and the internet, because he thinking this causing the problem.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T20:57:17.830+00",
+      "diff": "00:02:19.823",
+      "avg": "02:40:10.526487"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen from a conversation I had with tech at my ISP once, they said that  all phone sockets in the house, should have a microfilter in them.  He also spoke of a way to test for noise on the line.. But, I don't see how it's possible for that to be related to your problem beause you are talking about going straight from computer to router, not even through the internet. You could perhaps disconnect the internet cable and still have private 192.x.y.x or 10.x.y.z addresses and try pinging",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T21:05:36.243+00",
+      "diff": "00:08:18.413",
+      "avg": "02:36:22.72365"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen I haven't heard of that .. I'd have thought most people have phone and internet from different companeis.. ISPs are rarely phone companies. Be interesting to see where their diagnosing goes",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-12T22:50:21.163+00",
+      "diff": "01:44:44.92",
+      "avg": "02:35:07.167463"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop Yea, here we can split it to different companies, but its work in special way... same infastracture with differenct companies, now we are requested to them to split the infastructor, different to phone and different to internet.\n\nby the way, there is new thing I've learned on this problem, hold tight on somthing so you dont fall.\nI did a test, DISCONNECTED MY ROUTER FROM ANY INFASTRACTURE, CONNECTED ONLY ELECTRICITY, PINGED MY ROUTER AND THE PROBLEM IS STILL HEPPENING!!\nmeans, it comes from the router... but.... they just replaced my router... and same problem!",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T21:26:08.707+00",
+      "diff": "22:35:47.544",
+      "avg": "03:03:42.414524"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "It just make me crazy.... I wrote a letter to the router's company \"technicolor\" support, for maybe them can help me.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T21:26:55.593+00",
+      "diff": "00:00:46.886",
+      "avg": "02:59:27.169675"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen yeah disconnecting it from the wall is a good test.. it's what I meant when I said \"disconnect the internet cable\"!    Some interesting tests you can suggest to the tech guy.. What if they at their office from their laptop, ping one of their technicolour routers(ie locally at their office). Do they get the error you get? If so, then there you go. If not then what if they then take that router and their laptop to your place.  Then ping it(locally from your place), do they get the error. If so, then that can be investigated (e.g. is it the power in your home! who knows..!)..(cntd)",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T21:56:56.087+00",
+      "diff": "00:30:00.494",
+      "avg": "02:56:03.381591"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen  (Cntd)  If they don't get the error then you can then try pinging the router they brought in, but from your laptop. See if you get the error or not.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T21:57:38.473+00",
+      "diff": "00:00:42.386",
+      "avg": "02:52:09.581689"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen also try getting a completely different manufacturer of cables. It's really cheap to replace cables. It just helps to rule things out. And while you are at it, you can look at if there is a different in wireless/wifi issue between the router they brought in and the one they replaced it with.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T21:59:16.750+00",
+      "diff": "00:01:38.277",
+      "avg": "02:48:27.162022"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "@GuyCohen also maybe you can google \"quiet line test\" there are different ways of doing it, it may vary from country to country.In some theere may b a number to call. .Or u can disconnect a connector..there r tutorials on that..In  Eretz HaKodesh may have its ways!  My ISP is Zen in the UK, they are pretty good and any router they use is usually reliable and they have used technicolor routers so technicolor routers might not b that unreliable.generally.Sometimes an ISP with 24/7 tech support can be useful but then the quality of the tech (like level 1 or 2),can b low until they move u up.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T22:09:58.247+00",
+      "diff": "00:10:41.497",
+      "avg": "02:45:05.764893"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "barlop",
+      "text": "Let us [continue this discussion in chat](https://chat.stackexchange.com/rooms/107976/discussion-between-barlop-and-guy-cohen).",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-13T22:10:07.437+00",
+      "diff": "00:00:09.19",
+      "avg": "02:41:39.58625"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "Guy Cohen",
+      "text": "@barlop Sent you an update on the chat about the problem issue.\nFinnaly solved the problem!!\nI'll Update my answer.\nThanks!",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-14T10:00:39.497+00",
+      "diff": "11:50:32.06",
+      "avg": "02:52:51.677551"
+    },
+    {
+      "post_id": 1549918,
+      "title": "General failure while pinging my router",
+      "displayname": "JW0914",
+      "text": "Just an FYI, it's a really bad idea to use an ISP provided router, and if one must be used, you should place your own router between the ISP router and your devices.  ISPs retain SSH access to their routers for troubleshooting consumer issues, however the customer is then exposed to at least two types of data breaches: (1) rogue employees abusing their SSH access privileges; (2) an external data breach of the ISP's system(s) that may never become public, even if it's known about by the ISP.",
+      "post_created_at": "2020-05-08T12:50:27.297+00",
+      "created_at": "2020-05-14T11:00:25.683+00",
+      "diff": "00:59:46.186",
+      "avg": "02:50:35.96772"
+    }
+  ]
+}
