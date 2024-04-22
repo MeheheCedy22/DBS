@@ -6,6 +6,7 @@ Dokumentácia nebola treba.
 
 ### Zadanie 2
 Databázu som sem nemohol nahrať pretože je príliš veľká (~1,35 GB).
+
 [Dokumentácia MD](documentation/zadanie2.md)
 ### Zadanie 3
 [Dokumentácia MD](documentation/zadanie3.md)
