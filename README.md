@@ -23,13 +23,9 @@ Databázu som nemohol nahrať na GitHub pretože je príliš veľká (~1,35 GB).
 ### Zadanie 4
 [Zadanie PDF](assignments/zadanie4/DBS__Assignment_4__Slovak_.pdf)
 
-[Dokumentácia MD](documentation/zadanie4.md)
-
-[Dokumentácia PDF](documentation/zadanie4.pdf)
+Dokumentácia ([MD](documentation/zadanie4.md) / [PDF](documentation/zadanie4.pdf))
 
 ### Zadanie 5
 [Zadanie PDF](assignments/zadanie5/DBS__Assignment_5__Slovak.pdf)
 
-[Dokumentácia MD](documentation/zadanie5.md)
-
-[Dokumentácia PDF](documentation/zadanie5.pdf)
+Dokumentácia ([MD](documentation/zadanie5.md) / [PDF](documentation/zadanie5.pdf))
